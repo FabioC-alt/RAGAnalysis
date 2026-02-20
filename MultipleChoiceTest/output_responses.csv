@@ -1,0 +1,6 @@
+"Question","FAISS Response","Manual Response","Latency FAISS","Latency Manual"
+"What are the core principles of O-RAN?","A) Intelligence and Openness","[Cluster 0] A) Intelligence and Openness","1.0076 ms (FAISS Execution)","30.9275 ms"
+"Which of the following is NOT a key element of the O-RAN architecture?","C) Core Network User Plane Function (UPF)","[Cluster 0] C) Core Network User Plane Function (UPF)","1.0329 ms (FAISS Execution)","32.0455 ms"
+"What does O-Cloud host?","C) Near-RT RIC, O-CU-CP, O-CU-UP, and O-DU","[Cluster 2] C) Near-RT RIC, O-CU-CP, O-CU-UP, and O-DU","0.8834 ms (FAISS Execution)","19.1953 ms"
+"Which orchestration tool is typically used for container deployment in O-Cloud?","C) Kubernetes(K8s)","[Cluster 2] C) Kubernetes(K8s)","0.7000 ms (FAISS Execution)","10.7170 ms"
+"What is the latency range for the Near-RT RIC control loop?","A) Less than 1 millisecond","[Cluster 1] A) Less than 1 millisecond","1.1630 ms (FAISS Execution)","7.7121 ms"

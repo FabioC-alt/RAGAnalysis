@@ -1,0 +1,6 @@
+Question,A,B,C,D
+"What are the core principles of O-RAN?",Intelligence and Openness,Speed and Reliability,Cost Reduction and Scalability,Proprietary integration and security
+"Which of the following is NOT a key element of the O-RAN architecture?",Service Management and Orchestration (SMO),O-Cloud,Core Network User Plane Function (UPF),Near-RT RIC
+"What does O-Cloud host?",Only the O-RU functions, Near-RT RIC O-CU-CP O-CU-UP and O-DU,Only core network functions,Only the Non-RT RIC
+"Which orchestration tool is typically used for container deployment in O-Cloud?",Docker Swar,Apache Mesos,Kubernetes(K8s),VMware vSphere,
+"What is the latency range for the Near-RT RIC control loop?",Less than 1 millisecond, 10 millisecond to 1 second, 1 second to 10 seconds, Greater than 10 seconds
