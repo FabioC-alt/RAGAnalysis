@@ -1,640 +1,101 @@
-O-RAN: 100 Multiple-Choice Questions
-Based on O-RAN Alliance Specifications
-Correct answers are highlighted in green at the end of each question.
-O-RAN General Architecture & Concepts
-Q1. What are the core principles of O-RAN?
-A) Intelligence and openness
-B) Speed and reliability
-C) Cost reduction and scalability
-D) Proprietary integration and security
-? Correct Answer: A
-Q2. Which of the following is NOT a key element of the O-RAN architecture?
-A) Service Management and Orchestration (SMO)
-B) O-Cloud
-C) Core Network User Plane Function (UPF)
-D) Near-RT RIC
-? Correct Answer: C
-Q3. What does O-Cloud host?
-A) Only the O-RU functions
-B) Near-RT RIC, O-CU-CP, O-CU-UP, and O-DU
-C) Only core network functions
-D) Only the Non-RT RIC
-? Correct Answer: B
-Q4. Which orchestration tool is typically used for container deployment in O-Cloud?
-A) Docker Swarm
-B) Apache Mesos
-C) Kubernetes (K8s)
-D) VMware vSphere
-? Correct Answer: C
-Q5. What is the latency range for the Near-RT RIC control loop?
-A) Less than 1 millisecond
-B) 10 milliseconds to 1 second
-C) 1 second to 10 seconds
-D) Greater than 10 seconds
-? Correct Answer: B
-Q6. What is the latency range for the Non-RT RIC control loop?
-A) Less than 10 milliseconds
-B) 10 milliseconds to 1 second
-C) Greater than 1 second
-D) Less than 1 microsecond
-? Correct Answer: C
-Q7. Which interface connects the Non-RT RIC to the Near-RT RIC?
-A) O1 interface
-B) E2 interface
-C) O2 interface
-D) A1 interface
-? Correct Answer: D
-Q8. Which interface connects the Near-RT RIC to E2 nodes?
-A) A1 interface
-B) E2 interface
-C) O1 interface
-D) Y1 interface
-? Correct Answer: B
-Q9. The O1 interface connects which components?
-A) Near-RT RIC and E2 nodes
-B) O-RAN Managed Elements and the SMO
-C) O-DU and O-RU
-D) Non-RT RIC and Near-RT RIC
-? Correct Answer: B
-Q10. What does the O2 interface manage?
-A) The Open Fronthaul between O-DU and O-RU
-B) Communication between Non-RT RIC and Near-RT RIC
-C) O-Cloud infrastructures and cloudified NF lifecycle management
-D) RAN analytics exposure to external entities
-? Correct Answer: C
-Q11. What functions does the Open Fronthaul interface comprise?
-A) Control, User, Synchronization, and Management planes
-B) Only Control and User planes
-C) Only Management and Synchronization planes
-D) Control, Data, Signaling, and Security planes
-? Correct Answer: A
-Q12. Which Loop in O-RAN is responsible for per-TTI resource scheduling?
-A) Loop 3 in the SMO
-B) Loop 2 in the Near-RT RIC
-C) Loop 1 in the DU
-D) Loop 2 in the Non-RT RIC
-? Correct Answer: C
-Q13. What does FCAPS stand for in the context of the O1 interface?
-A) Fault, Configuration, Accounting, Performance, Security
-B) Fronthaul, Cloud, Access, Performance, Synchronization
-C) Function, Compute, Analytics, Policy, Slicing
-D) Fault, Computing, Architecture, Protocol, Service
-? Correct Answer: A
-Q14. What is the Y1 interface used for?
-A) Managing O-Cloud resources
-B) Connecting O-DU to O-RU
-C) Exposing RAN analytics information to external entities
-D) Synchronization between base stations
-? Correct Answer: C
-Q15. The Non-RT RIC is part of which framework?
-A) O-Cloud platform
-B) 3GPP Core Network
-C) Service Management and Orchestration (SMO) framework
-D) Near-RT RIC framework
-? Correct Answer: C
-OAM Architecture Models
-Q16. How many OAM management architecture models does O-RAN define?
-A) Two
-B) Three
-C) Four
-D) Five
-? Correct Answer: B
-Q17. In the Flat management model, how do Managed Functions connect to the SMO?
-A) Through the O-DU as a proxy
-B) Via the A1 interface only
-C) Each MF is an ME and exposes an O1 interface directly to the SMO
-D) Through the E2 interface
-? Correct Answer: C
-Q18. In the Hierarchical management model, who manages the O-RU?
-A) The SMO directly via O1
-B) The O-DU via the Open Fronthaul M-Plane interface
-C) The Near-RT RIC via E2
-D) The Non-RT RIC via A1
-? Correct Answer: B
-Q19. Which management model does the Open Fronthaul M-Plane NOT support for the O-RU?
-A) Hierarchical model
-B) Hybrid model
-C) Flat model
-D) Both Flat and Hierarchical models
-? Correct Answer: C
-Q20. In the Hybrid management model, the O-RU is managed by:
-A) Only the SMO
-B) Only the O-DU
-C) Both the O-DU (via M-Plane) and the SMO (via direct interface)
-D) The Near-RT RIC and O-DU
-? Correct Answer: C
-Q21. What is a key motivation for the Managed Element (ME) concept?
-A) It allows each function to be updated independently
-B) It is a tightly integrated and tested group of MFs deployed together
-C) It eliminates the need for the O1 interface
-D) It only applies to virtualized network functions
-? Correct Answer: B
-Q22. Which of the following is NOT an example of an O-RAN Managed Function?
-A) O-CU-CP
-B) O-DU
-C) User Plane Function (UPF)
-D) Near-RT RIC
-? Correct Answer: C
-Communication & Computing Integrated Networks (CCIN)
-Q23. What does CCIN stand for?
-A) Cloud Computing Integration Network
-B) Communication and Computing Integrated Networks
-C) Central Computing Infrastructure Node
-D) Converged Communication and Intelligence Network
-? Correct Answer: B
-Q24. What is the primary goal of CCIN?
-A) To replace all proprietary RAN equipment
-B) To provide beyond-connection services and bring new value to operators
-C) To eliminate the need for edge computing
-D) To replace 5G core network functions
-? Correct Answer: B
-Q25. At which level of CCIN integration are communication and computing jointly scheduled in real-time?
-A) Level 1
-B) Level 2
-C) Level 3
-D) Level 4
-? Correct Answer: C
-Q26. At Level 1 of CCIN integration, what is the relationship between computing and communication?
-A) They are jointly scheduled in real-time
-B) They interact via established APIs
-C) They simply co-locate on the same hardware with little interaction
-D) They are managed by different orchestrators
-? Correct Answer: C
-Q27. In CCIN, which entity registers computing services with the SME?
-A) Near-RT RIC
-B) O-Cloud
-C) REAO (RAN Edge Application Orchestrator)
-D) O-DU
-? Correct Answer: C
-Q28. How does the Near-RT RIC obtain computing information for Y1 exposure?
-A) From the Non-RT RIC via A1
-B) From E2 nodes via E2
-C) From O-Cloud via O-Cloud Notification APIs
-D) From the SMO via O1
-? Correct Answer: C
-Q29. Which organization initiated the computing-aware traffic steering working group in March 2023?
-A) 3GPP
-B) ETSI
-C) ITU-T
-D) IETF
-? Correct Answer: D
-Q30. Which of the following is a use case for computing-aware traffic steering studied by IETF?
-A) Computing-aware AR/VR
-B) Computing-aware blockchain mining
-C) Computing-aware video transcoding
-D) Computing-aware database replication
-? Correct Answer: A
-Q31. What type of services can CCIN provide externally?
-A) Only raw computing capability (FLOPS)
-B) Only traditional RAN communication services
-C) Various types, from basic computing capability (FLOPS) to AI model training capabilities
-D) Only edge caching services
-? Correct Answer: C
-Q32. In the integrated communication and computing service provisioning via SMO, which interfaces are used to retrieve information?
-A) Only O1
-B) Only O2
-C) O1 and O2 interfaces
-D) A1 and E2 interfaces
-? Correct Answer: C
-Energy Saving
-Q33. What is the main purpose of the Carrier and Cell Switch Off/On use case?
-A) Increase network capacity during peak hours
-B) Achieve energy savings by switching off cells when traffic demand is low
-C) Improve handover performance
-D) Enable network slicing
-? Correct Answer: B
-Q34. In deployment option 1 for energy saving, where is the AI/ML inference model hosted?
-A) At the O-RU
-B) At the Near-RT RIC
-C) At the Non-RT RIC
-D) At the O-DU
-? Correct Answer: C
-Q35. For a 4T4R O-RU, what is the approximate energy saving per O-RU in the energy saving state?
-A) 50-80 W
-B) 150-180 W
-C) 300-400 W
-D) 500-600 W
-? Correct Answer: B
-Q36. For a 64T64R O-RU, what is the approximate energy saving per O-RU in the energy saving state?
-A) 100-150 W
-B) 150-180 W
-C) 260-340 W
-D) 500-700 W
-? Correct Answer: C
-Q37. Which O-RU components contribute the MOST to energy savings during cell switch-off?
-A) Fronthaul Processing Unit and Power Unit
-B) RF Processing Unit and Digital Processing Unit
-C) Power Unit and other components
-D) Fronthaul Processing Unit only
-? Correct Answer: B
-Q38. What is RF Channel Reconfiguration primarily aimed at?
-A) Changing the O-RU's frequency band
-B) Performing O-RU Tx/Rx Array selection to reduce power consumption
-C) Upgrading O-RU software
-D) Reconfiguring the fronthaul transport
-? Correct Answer: B
-Q39. In RF Channel Reconfiguration, how many Tx/Rx Arrays might be switched off in a 64T64R mMIMO O-RU?
-A) 8 out of 64
-B) 16 out of 64
-C) 32 out of 64
-D) 48 out of 64
-? Correct Answer: C
-Q40. Does Non-RT or Near-RT RIC controlled Cell Switch Off/On impact 3GPP specifications?
-A) Yes, it requires new 3GPP RAN specifications
-B) Yes, it requires new 3GPP System Architecture specifications
-C) No, it is not considered to have any impact
-D) Yes, it impacts both RAN and System Architecture specifications
-? Correct Answer: C
-Q41. Which 3GPP specification defines energy saving management for 5G?
-A) TS 38.300
-B) TS 28.310
-C) TS 23.501
-D) TS 36.300
-? Correct Answer: B
-Q42. What is the estimated yearly energy saving for 10,000 64T64R O-RUs with 3 hours switch-off per day?
-A) 730-1,000 MWh
-B) 1,643-1,971 MWh
-C) 2,847-3,723 MWh
-D) 5,000-6,000 MWh
-? Correct Answer: C
-Traffic Steering & Use Cases
-Q43. In enrichment information-based traffic steering, which interface delivers enrichment information from Non-RT RIC to Near-RT RIC?
-A) O1
-B) E2
-C) A1-EI
-D) Y1
-? Correct Answer: C
-Q44. What triggers the Near-RT RIC to request enrichment information in the traffic steering use case?
-A) A timer expiration
-B) Detection of a cell performance breach (e.g., congestion)
-C) A request from the O-DU
-D) An operator manual command
-? Correct Answer: B
-Q45. Which rApp calculates the geo-location of UEs in the traffic steering use case?
-A) Traffic steering rApp
-B) Energy saving rApp
-C) UE location rApp
-D) Congestion management rApp
-? Correct Answer: C
-Q46. What type of prediction does the traffic steering rApp generate?
-A) Weather prediction
-B) UE trajectory prediction (UE_Traj_Pred)
-C) Network capacity prediction
-D) Hardware failure prediction
-? Correct Answer: B
-Q47. In the IIoT optimization use case, which feature allows up to 4 RLC entities/legs?
-A) Ethernet Header Compression (EHC)
-B) Carrier Aggregation
-C) PDCP duplication
-D) Pre-emption Indication (PI)
-? Correct Answer: C
-Q48. What is the objective of the Massive MIMO optimization use case?
-A) To reduce the number of antennas in the network
-B) To configure mMIMO parameters using ML-assisted policies for optimal performance
-C) To replace Massive MIMO with single-antenna systems
-D) To increase the power consumption of O-RUs
-? Correct Answer: B
-Q49. NR cell shaping optimization adjusts cell coverage by configuring:
-A) The core network routing tables
-B) Vertical and horizontal coverage width of the common beam
-C) Only the transmit power of the O-RU
-D) The backhaul transport capacity
-? Correct Answer: B
-Q50. In the MIMO Mode Selection (MMS) use case, what does the rApp optimize?
-A) Fronthaul bandwidth allocation
-B) SU-MIMO vs. MU-MIMO assignment
-C) Core network routing
-D) O-Cloud resource allocation
-? Correct Answer: B
-Q51. What data does the Congestion Prediction and Management (CPM) use case rely on?
-A) Only hardware temperature readings
-B) AI/ML model training of KPIs and predicted congestion logic
-C) Manual operator inputs only
-D) Only transport network metrics
-? Correct Answer: B
-Q52. Which interface does the MMS rApp use to communicate recommendations to the SMO?
-A) E2 interface
-B) A1 interface
-C) R1 interface
-D) O2 interface
-? Correct Answer: C
-Shared O-RU
-Q53. What is a Shared O-RU?
-A) An O-RU that is shared between multiple UEs
-B) An O-RU shared between multiple O-DU nodes
-C) An O-RU shared between multiple O-CU nodes only
-D) An O-RU shared between multiple SMOs
-? Correct Answer: B
-Q54. Which of the following is NOT a benefit of Shared O-RU for single-MNO deployments?
-A) Resiliency
-B) Load balancing
-C) Spectrum auction support
-D) BBU pooling
-? Correct Answer: C
-Q55. What happens when a Shared O-RU loses supervision with the O-DU responsible for a partitioned carrier?
-A) It continues transmitting at full power
-B) It autonomously ceases transmitting on that partitioned carrier
-C) It switches to a different frequency band
-D) It resets all its configurations
-? Correct Answer: B
-Q56. In multi-operator Shared O-RU, what prevents a tenant from accessing another tenant's data?
-A) Physical separation of hardware
-B) PLMN-ID based role-based access control
-C) Different O-Cloud instances
-D) Separate SMO frameworks
-? Correct Answer: B
-Q57. Which reporting method is NOT supported by the Shared O-RU for performance management?
-A) Event notifications (active push)
-B) Active collection by O-DU (reading attributes)
-C) Streaming-based reporting
-D) File upload by O-RU as SFTP client
-? Correct Answer: C
-Q58. In the basic resiliency use case for Shared O-RU, what triggers the switch-over?
-A) A timer expiration
-B) Operator manual intervention only
-C) Active O-DU failure (operational state = disabled)
-D) O-RU software upgrade
-? Correct Answer: C
-SMO Services
-Q59. Which SMOS provides RAN NF performance measurement data collection?
-A) NFFM (Fault Supervision Management)
-B) NFCM (Provisioning Management)
-C) NFPM (Performance Assurance Management)
-D) NFO (Network Function Orchestration)
-? Correct Answer: C
-Q60. What does the SME (Service Management and Exposure) SMOS provide?
-A) Only rApp lifecycle management
-B) SMOS registration, discovery, authentication/authorization, and communication support
-C) Only fault management services
-D) Only O-Cloud resource management
-? Correct Answer: B
-Q61. What is the role of the DME (Data Management and Exposure) SMOS?
-A) Managing O-Cloud hardware resources
-B) Allowing data producers to register data types and consumers to discover and consume data
-C) Only managing transport network data
-D) Only managing security certificates
-? Correct Answer: B
-Q62. Which SMOS is responsible for orchestrating O-Cloud resources for NF deployment?
-A) FOCOM
-B) DME
-C) NFO (Network Function Orchestration)
-D) SME
-? Correct Answer: C
-Q63. What does FOCOM stand for?
-A) Fronthaul Orchestration and Control Management
-B) Federated O-Cloud Orchestration and Management
-C) Fault Operations and Configuration Management
-D) Function Orchestration and Computing Management
-? Correct Answer: B
-Q64. The Topology Exposure and Inventory (TE&IV) SMOS provides information about:
-A) Only radio resources
-B) Only cloud resources
-C) O-RAN resources and their relationships (network view)
-D) Only transport resources
-? Correct Answer: C
-Q65. Which SMOS handles RAN subnetwork slice provisioning?
-A) NFO
-B) SME
-C) FOCOM
-D) NSSM (RAN Network Slice Subnet Management)
-? Correct Answer: D
-Q66. What is the R1 interface used for?
-A) Connecting O-DU to O-RU
-B) Interface between rApps and the SMO/Non-RT RIC framework
-C) Connecting the SMO to O-Cloud
-D) Connecting E2 nodes to the Near-RT RIC
-? Correct Answer: B
-Q67. Which lifecycle management actions can the NFO SMOS perform?
-A) Only initial deployment
-B) Healing, updates, scaling, software upgrades, and termination
-C) Only termination
-D) Only scaling and healing
-? Correct Answer: B
-Resiliency
-Q68. Which of the following is NOT a fundamental resiliency concept in O-RAN?
-A) Redundant architectures
-B) Fault detection and recovery
-C) Proprietary vendor lock-in
-D) Load balancing and failover
-? Correct Answer: C
-Q69. Which O-RAN release is noted as having insufficient coverage for end-to-end resiliency?
-A) Release 001
-B) Release 002
-C) Release 003
-D) Release 004
-? Correct Answer: D
-Q70. How can the O-DU detect O-RU failures?
-A) Via core network signaling
-B) Using FM data (alarms, CM notifications, PM data) via Open Fronthaul M-Plane
-C) Only through physical inspection
-D) Via the A1 interface
-? Correct Answer: B
-Q71. Which protocol provides transport-level redundancy for the F1-C interface?
-A) TCP
-B) UDP
-C) SCTP
-D) HTTP/2
-? Correct Answer: C
-Q72. What role does the SMO play in resiliency?
-A) It has no role in resiliency
-B) It only monitors performance metrics
-C) It monitors criteria, triggers reconfiguration actions, and manages resiliency policies
-D) It only handles software upgrades
-? Correct Answer: C
-Q73. Multi-layered resiliency in O-RAN spans:
-A) Only physical components
-B) Only virtual components
-C) Both physical and virtual components
-D) Only the transport layer
-? Correct Answer: C
-Q74. Which of the following is a gap identified in O-RAN resiliency specifications?
-A) Lack of O-RU specifications
-B) O-CU-CP failures and O-Cloud NF Deployment failures handling
-C) Excessive specification of transport resiliency
-D) Too many resiliency mechanisms defined
-? Correct Answer: B
-Q75. Which working groups are involved in the O-RAN resiliency study?
-A) Only WG1
-B) WG1, WG4, WG6, WG9, and WG11
-C) Only WG4 and WG6
-D) Only WG9 and WG11
-? Correct Answer: B
-Non-Terrestrial Networks (NTN)
-Q76. In TN-NTN interworking, what does SNO stand for?
-A) Service Network Operator
-B) Satellite Network Operator
-C) Shared Network Orchestrator
-D) System Node Operator
-? Correct Answer: B
-Q77. What is the main challenge in TN-NTN coverage information sharing?
-A) Lack of satellite bandwidth
-B) Current interfaces don't support sharing coverage information between operator domains
-C) UEs cannot connect to satellites
-D) NTN coverage is always static
-? Correct Answer: B
-Q78. Why is automated coverage information exchange needed between TN and NTN?
-A) Because coverage never changes
-B) Because both TN and NTN footprints are continuously evolving and dynamic
-C) Because manual methods are more reliable
-D) Because it is required by spectrum regulators
-? Correct Answer: B
-Q79. What information does the NTN segment need to communicate to the TN segment?
-A) Only satellite orbital parameters
-B) Active/potential NTN coverage, applicable cells, configuration, and satellite ephemeris
-C) Only billing information
-D) Only spectrum allocation data
-? Correct Answer: B
-Q80. Most MNOs seeking NTN integration will likely:
-A) Deploy and operate their own satellites
-B) Build their own ground stations only
-C) Form agreements with Satellite Network Operators (SNOs)
-D) Abandon terrestrial networks entirely
-? Correct Answer: C
-Security, Transport & Key Concepts
-Q81. What does PNF stand for in O-RAN?
-A) Programmable Network Framework
-B) Physical Network Function
-C) Private Network Fabric
-D) Protocol Normalization Function
-? Correct Answer: B
-Q82. Which requirement mandates O-RAN OAM Architecture to support virtualization of RAN components?
-A) REQ-M&O-FUN1
-B) REQ-M&O-NFUN2
-C) REQ-M&O-FUN3
-D) REQ-M&O-NFUN4
-? Correct Answer: B
-Q83. What does REQ-M&O-NFUN3 require the O-RAN OAM Architecture to support?
-A) Network slicing
-B) Analytics and AI/ML to improve efficiency and reduce costs
-C) Security of interactions between components
-D) Virtualized resource orchestration through O2
-? Correct Answer: B
-Q84. Which protocol is used for synchronization in O-Cloud platform runtime?
-A) NTP (Network Time Protocol)
-B) SNMP
-C) PTP (Precision Time Protocol)
-D) SyncE
-? Correct Answer: C
-Q85. OpenStack is typically used in O-Cloud for which type of deployment?
-A) Container deployment
-B) Virtual Machine (VM) deployment
-C) Physical Network Function deployment
-D) Transport network deployment
-? Correct Answer: B
-Network Slicing
-Q86. Which O-RAN requirement mandates support for network slicing?
-A) REQ-M&O-FUN7
-B) REQ-M&O-FUN11
-C) REQ-M&O-NFUN1
-D) REQ-M&O-FUN4
-? Correct Answer: B
-Q87. How does the Shared O-RU feature support network slicing?
-A) By eliminating the need for slicing
-B) Through dynamic resource allocation aspects
-C) By creating physical network partitions only
-D) By limiting each slice to a single O-DU
-? Correct Answer: B
-Q88. In IIoT, how can a virtual Non-Public Network (NPN) be implemented?
-A) By deploying all equipment privately
-B) Using network slicing where some equipment (gNB) is private and others (UPF, 5GC) are shared
-C) By using only WiFi networks
-D) By completely isolating from any public network
-? Correct Answer: B
-AI/ML in O-RAN
-Q89. Where is AI/ML model training primarily performed in O-RAN?
-A) At the O-RU
-B) At the O-DU
-C) In the Non-RT RIC or SMO
-D) In the UE
-? Correct Answer: C
-Q90. Where does AI/ML inference for near-real-time decisions primarily occur?
-A) In the SMO
-B) In the Non-RT RIC
-C) In the Near-RT RIC
-D) In the O-Cloud management layer
-? Correct Answer: C
-Q91. Which interface do rApps use to interact with the Non-RT RIC framework?
-A) A1 interface
-B) E2 interface
-C) R1 interface
-D) O2 interface
-? Correct Answer: C
-Q92. In the energy saving AI/ML workflow, how are control decisions sent to E2 nodes?
-A) Via the O1 interface only
-B) Via the A1 interface
-C) Via the E2 interface from the Near-RT RIC
-D) Via the Open Fronthaul interface only
-? Correct Answer: C
-Q93. What does the AI/ML model in the CPM use case predict?
-A) Hardware failures only
-B) KPIs and congestion before it occurs
-C) Only spectrum availability
-D) Only UE battery levels
-? Correct Answer: B
-Fronthaul & WDM Technologies
-Q94. Which two main WDM technologies are used for 5G fronthaul?
-A) CWDM and TWDM
-B) MWDM and DWDM
-C) FWDM and LWDM
-D) SWDM and UWDM
-? Correct Answer: B
-Q95. How many bidirectional channels does MWDM define for its maximum configuration?
-A) 6 channels
-B) 8 channels
-C) 12 channels
-D) 24 channels
-? Correct Answer: C
-Q96. What wavelength range does DWDM C-Band use for 5G fronthaul?
-A) 1260-1360 nm
-B) 1529.55-1560.61 nm
-C) 1600-1650 nm
-D) 800-900 nm
-? Correct Answer: B
-Q97. What is the adjacent channel spacing for MWDM transmitters?
-A) 1 nm or 2 nm
-B) 3 nm or 5 nm
-C) 7 nm or 13 nm
-D) 20 nm or 40 nm
-? Correct Answer: C
-Q98. Which receiver technology can extend MWDM transmission distance beyond 10 km up to 20 km?
-A) PIN diode only
-B) Avalanche Photo Diode (APD)
-C) Directly Modulated Laser (DML)
-D) Erbium-Doped Fiber Amplifier (EDFA)
-? Correct Answer: B
-Standards Coordination
-Q99. According to ITU-T, what does coordination of computing and networking encompass?
-A) Only computing resource management
-B) Coordination of utilization, control, and management of computing, storage, and networking resources
-C) Only network resource management
-D) Only storage resource management
-? Correct Answer: B
-Q100. Which organization provides the reference framework for network virtualization that O-RAN builds upon?
-A) IEEE
-B) IETF
-C) ETSI ISG NFV
-D) ITU-R
-? Correct Answer: C
-
-
-Answer Key
-Q  1: A     Q  2: C     Q  3: B     Q  4: C     Q  5: B
-Q  6: C     Q  7: D     Q  8: B     Q  9: B     Q 10: C
-Q 11: A     Q 12: C     Q 13: A     Q 14: C     Q 15: C
-Q 16: B     Q 17: C     Q 18: B     Q 19: C     Q 20: C
-Q 21: B     Q 22: C     Q 23: B     Q 24: B     Q 25: C
-Q 26: C     Q 27: C     Q 28: C     Q 29: D     Q 30: A
-Q 31: C     Q 32: C     Q 33: B     Q 34: C     Q 35: B
-Q 36: C     Q 37: B     Q 38: B     Q 39: C     Q 40: C
-Q 41: B     Q 42: C     Q 43: C     Q 44: B     Q 45: C
-Q 46: B     Q 47: C     Q 48: B     Q 49: B     Q 50: B
-Q 51: B     Q 52: C     Q 53: B     Q 54: C     Q 55: B
-Q 56: B     Q 57: C     Q 58: C     Q 59: C     Q 60: B
-Q 61: B     Q 62: C     Q 63: B     Q 64: C     Q 65: D
-Q 66: B     Q 67: B     Q 68: C     Q 69: D     Q 70: B
-Q 71: C     Q 72: C     Q 73: C     Q 74: B     Q 75: B
-Q 76: B     Q 77: B     Q 78: B     Q 79: B     Q 80: C
-Q 81: B     Q 82: B     Q 83: B     Q 84: C     Q 85: B
-Q 86: B     Q 87: B     Q 88: B     Q 89: C     Q 90: C
-Q 91: C     Q 92: C     Q 93: B     Q 94: B     Q 95: C
-Q 96: B     Q 97: C     Q 98: B     Q 99: B     Q100: C
+Question,A,B,C,D
+Q 1 What are the core principles of O-RAN?,A) Intelligence and openness,B) Speed and reliability,C) Cost reduction and scalability,D) Proprietary integration and security
+Q 2 Which of the following is NOT a key element of the O-RAN architecture?,A) Service Management and Orchestration (SMO),B) O-Cloud,C) Core Network User Plane Function (UPF),D) Near-RT RIC
+Q 3 What does O-Cloud host?,A) Only the O-RU functions,B) Near-RT RIC O-CU-CP O-CU-UP and O-DU,C) Only core network functions,D) Only the Non-RT RIC
+Q 4 Which orchestration tool is typically used for container deployment in O-Cloud?,A) Docker Swarm,B) Apache Mesos,C) Kubernetes (K8s),D) VMware vSphere
+Q 5 What is the latency range for the Near-RT RIC control loop?,A) Less than 1 millisecond,B) 10 milliseconds to 1 second,C) 1 second to 10 seconds,D) Greater than 10 seconds
+Q 6 What is the latency range for the Non-RT RIC control loop?,A) Less than 10 milliseconds,B) 10 milliseconds to 1 second,C) Greater than 1 second,D) Less than 1 microsecond
+Q 7 Which interface connects the Non-RT RIC to the Near-RT RIC?,A) O1 interface,B) E2 interface,C) O2 interface,D) A1 interface
+Q 8 Which interface connects the Near-RT RIC to E2 nodes?,A) A1 interface,B) E2 interface,C) O1 interface,D) Y1 interface
+Q 9 The O1 interface connects which components?,A) Near-RT RIC and E2 nodes,B) O-RAN Managed Elements and the SMO,C) O-DU and O-RU,D) Non-RT RIC and Near-RT RIC
+Q 10 What does the O2 interface manage?,A) The Open Fronthaul between O-DU and O-RU,B) Communication between Non-RT RIC and Near-RT RIC,C) O-Cloud infrastructures and cloudified NF lifecycle management,D) RAN analytics exposure to external entities
+Q 11 What functions does the Open Fronthaul interface comprise?,A) Control, User, Synchronization, and Management planes,B) Only Control and User planes,C) Only Management and Synchronization planes,D) Control, Data, Signaling, and Security planes
+Q 12 Which Loop in O-RAN is responsible for per-TTI resource scheduling?,A) Loop 3 in the SMO,B) Loop 2 in the Near-RT RIC,C) Loop 1 in the DU,D) Loop 2 in the Non-RT RIC
+Q 13 What does FCAPS stand for in the context of the O1 interface?,A) Fault Configuration Accounting Performance Security,B) Fronthaul, Cloud, Access, Performance, Synchronization,C) Function, Compute, Analytics, Policy, Slicing,D) Fault, Computing, Architecture, Protocol, Service
+Q 14 What is the Y1 interface used for?,A) Managing O-Cloud resources,B) Connecting O-DU to O-RU,C) Exposing RAN analytics information to external entities,D) Synchronization between base stations
+Q 15 The Non-RT RIC is part of which framework?,A) O-Cloud platform,B) 3GPP Core Network,C) Service Management and Orchestration (SMO) framework,D) Near-RT RIC framework
+Q 16 How many OAM management architecture models does O-RAN define?,A) Two,B) Three,C) Four,D) Five
+Q 17 In the Flat management model, how do Managed Functions connect to the SMO?,A) Through the O-DU as a proxy,B) Via the A1 interface only,C) Each MF is an ME and exposes an O1 interface directly to the SMO,D) Through the E2 interface
+Q 18 In the Hierarchical management model, who manages the O-RU?,A) The SMO directly via O1,B) The O-DU via the Open Fronthaul M-Plane interface,C) The Near-RT RIC via E2,D) The Non-RT RIC via A1
+Q 19 Which management model does the Open Fronthaul M-Plane NOT support for the O-RU?,A) Hierarchical model,B) Hybrid model,C) Flat model,D) Both Flat and Hierarchical models
+Q 20 In the Hybrid management model, the O-RU is managed by:,A) Only the SMO,B) Only the O-DU,C) Both the O-DU (via M-Plane) and the SMO (via direct interface),D) The Near-RT RIC and O-DU
+Q 21 What is a key motivation for the Managed Element (ME) concept?,A) It allows each function to be updated independently,B) It is a tightly integrated and tested group of MFs deployed together,C) It eliminates the need for the O1 interface,D) It only applies to virtualized network functions
+Q 22 Which of the following is NOT an example of an O-RAN Managed Function?,A) O-CU-CP,B) O-DU,C) User Plane Function (UPF),D) Near-RT RIC
+Q 23 What does CCIN stand for?,A) Cloud Computing Integration Network,B) Communication and Computing Integrated Networks,C) Central Computing Infrastructure Node,D) Converged Communication and Intelligence Network
+Q 24 What is the primary goal of CCIN?,A) To replace all proprietary RAN equipment,B) To provide beyond-connection services and bring new value to operators,C) To eliminate the need for edge computing,D) To replace 5G core network functions
+Q 25 At which level of CCIN integration are communication and computing jointly scheduled in real-time?,A) Level 1,B) Level 2,C) Level 3,D) Level 4
+Q 26 At Level 1 of CCIN integration, what is the relationship between computing and communication?,A) They are jointly scheduled in real-time,B) They interact via established APIs,C) They simply co-locate on the same hardware with little interaction,D) They are managed by different orchestrators
+Q 27 In CCIN, which entity registers computing services with the SME?,A) Near-RT RIC,B) O-Cloud,C) REAO (RAN Edge Application Orchestrator),D) O-DU
+Q 28 How does the Near-RT RIC obtain computing information for Y1 exposure?,A) From the Non-RT RIC via A1,B) From E2 nodes via E2,C) From O-Cloud via O-Cloud Notification APIs,D) From the SMO via O1
+Q 29 Which organization initiated the computing-aware traffic steering working group in March 2023?,A) 3GPP,B) ETSI,C) ITU-T,D) IETF
+Q 30 Which of the following is a use case for computing-aware traffic steering studied by IETF?,A) Computing-aware AR/VR,B) Computing-aware blockchain mining,C) Computing-aware video transcoding,D) Computing-aware database replication
+Q 31 What type of services can CCIN provide externally?,A) Only raw computing capability (FLOPS),B) Only traditional RAN communication services,C) Various types, from basic computing capability (FLOPS) to AI model training capabilities,D) Only edge caching services
+Q 32 In the integrated communication and computing service provisioning via SMO, which interfaces are used to retrieve information?,A) Only O1,B) Only O2,C) O1 and O2 interfaces,D) A1 and E2 interfaces
+Q 33 What is the main purpose of the Carrier and Cell Switch Off/On use case?,A) Increase network capacity during peak hours,B) Achieve energy savings by switching off cells when traffic demand is low,C) Improve handover performance,D) Enable network slicing
+Q 34 In deployment option 1 for energy saving, where is the AI/ML inference model hosted?,A) At the O-RU,B) At the Near-RT RIC,C) At the Non-RT RIC,D) At the O-DU
+Q 35 For a 4T4R O-RU, what is the approximate energy saving per O-RU in the energy saving state?,A) 50-80 W,B) 150-180 W,C) 300-400 W,D) 500-600 W
+Q 36 For a 64T64R O-RU, what is the approximate energy saving per O-RU in the energy saving state?,A) 100-150 W,B) 150-180 W,C) 260-340 W,D) 500-700 W
+Q 37 Which O-RU components contribute the MOST to energy savings during cell switch-off?,A) Fronthaul Processing Unit and Power Unit,B) RF Processing Unit and Digital Processing Unit,C) Power Unit and other components,D) Fronthaul Processing Unit only
+Q 38 What is RF Channel Reconfiguration primarily aimed at?,A) Changing the O-RU's frequency band,B) Performing O-RU Tx/Rx Array selection to reduce power consumption,C) Upgrading O-RU software,D) Reconfiguring the fronthaul transport
+Q 39 In RF Channel Reconfiguration, how many Tx/Rx Arrays might be switched off in a 64T64R mMIMO O-RU?,A) 8 out of 64,B) 16 out of 64,C) 32 out of 64,D) 48 out of 64
+Q 40 Does Non-RT or Near-RT RIC controlled Cell Switch Off/On impact 3GPP specifications?,A) Yes, it requires new 3GPP RAN specifications,B) Yes, it requires new 3GPP System Architecture specifications,C) No, it is not considered to have any impact,D) Yes, it impacts both RAN and System Architecture specifications
+Q 41 Which 3GPP specification defines energy saving management for 5G?,A) TS 38.300,B) TS 28.310,C) TS 23.501,D) TS 36.300
+Q 42 What is the estimated yearly energy saving for 10,000 64T64R O-RUs with 3 hours switch-off per day?,A) 730-1,000 MWh,B) 1,643-1,971 MWh,C) 2,847-3,723 MWh,D) 5,000-6,000 MWh
+Q 43 In enrichment information-based traffic steering, which interface delivers enrichment information from Non-RT RIC to Near-RT RIC?,A) O1,B) E2,C) A1-EI,D) Y1
+Q 44 What triggers the Near-RT RIC to request enrichment information in the traffic steering use case?,A) A timer expiration,B) Detection of a cell performance breach (e.g., congestion),C) A request from the O-DU,D) An operator manual command
+Q 45 Which rApp calculates the geo-location of UEs in the traffic steering use case?,A) Traffic steering rApp,B) Energy saving rApp,C) UE location rApp,D) Congestion management rApp
+Q 46 What type of prediction does the traffic steering rApp generate?,A) Weather prediction,B) UE trajectory prediction (UE_Traj_Pred),C) Network capacity prediction,D) Hardware failure prediction
+Q 47 In the IIoT optimization use case, which feature allows up to 4 RLC entities/legs?,A) Ethernet Header Compression (EHC),B) Carrier Aggregation,C) PDCP duplication,D) Pre-emption Indication (PI)
+Q 48 What is the objective of the Massive MIMO optimization use case?,A) To reduce the number of antennas in the network,B) To configure mMIMO parameters using ML-assisted policies for optimal performance,C) To replace Massive MIMO with single-antenna systems,D) To increase the power consumption of O-RUs
+Q 49 NR cell shaping optimization adjusts cell coverage by configuring:,A) The core network routing tables,B) Vertical and horizontal coverage width of the common beam,C) Only the transmit power of the O-RU,D) The backhaul transport capacity
+Q 50 In the MIMO Mode Selection (MMS) use case, what does the rApp optimize?,A) Fronthaul bandwidth allocation,B) SU-MIMO vs. MU-MIMO assignment,C) Core network routing,D) O-Cloud resource allocation
+Q 51 What data does the Congestion Prediction and Management (CPM) use case rely on?,A) Only hardware temperature readings,B) AI/ML model training of KPIs and predicted congestion logic,C) Manual operator inputs only,D) Only transport network metrics
+Q 52 Which interface does the MMS rApp use to communicate recommendations to the SMO?,A) E2 interface,B) A1 interface,C) R1 interface,D) O2 interface
+Q 53 What is a Shared O-RU?,A) An O-RU that is shared between multiple UEs,B) An O-RU shared between multiple O-DU nodes,C) An O-RU shared between multiple O-CU nodes only,D) An O-RU shared between multiple SMOs
+Q 54 Which of the following is NOT a benefit of Shared O-RU for single-MNO deployments?,A) Resiliency,B) Load balancing,C) Spectrum auction support,D) BBU pooling
+Q 55 What happens when a Shared O-RU loses supervision with the O-DU responsible for a partitioned carrier?,A) It continues transmitting at full power,B) It autonomously ceases transmitting on that partitioned carrier,C) It switches to a different frequency band,D) It resets all its configurations
+Q 56 In multi-operator Shared O-RU, what prevents a tenant from accessing another tenant's data?,A) Physical separation of hardware,B) PLMN-ID based role-based access control,C) Different O-Cloud instances,D) Separate SMO frameworks
+Q 57 Which reporting method is NOT supported by the Shared O-RU for performance management?,A) Event notifications (active push),B) Active collection by O-DU (reading attributes),C) Streaming-based reporting,D) File upload by O-RU as SFTP client
+Q 58 In the basic resiliency use case for Shared O-RU, what triggers the switch-over?,A) A timer expiration,B) Operator manual intervention only,C) Active O-DU failure (operational state = disabled),D) O-RU software upgrade
+Q 59 Which SMOS provides RAN NF performance measurement data collection?,A) NFFM (Fault Supervision Management),B) NFCM (Provisioning Management),C) NFPM (Performance Assurance Management),D) NFO (Network Function Orchestration)
+Q 60 What does the SME (Service Management and Exposure) SMOS provide?,A) Only rApp lifecycle management,B) SMOS registration, discovery, authentication/authorization, and communication support,C) Only fault management services,D) Only O-Cloud resource management
+Q 61 What is the role of the DME (Data Management and Exposure) SMOS?,A) Managing O-Cloud hardware resources,B) Allowing data producers to register data types and consumers to discover and consume data,C) Only managing transport network data,D) Only managing security certificates
+Q 62 Which SMOS is responsible for orchestrating O-Cloud resources for NF deployment?,A) FOCOM,B) DME,C) NFO (Network Function Orchestration),D) SME
+Q 63 What does FOCOM stand for?,A) Fronthaul Orchestration and Control Management,B) Federated O-Cloud Orchestration and Management,C) Fault Operations and Configuration Management,D) Function Orchestration and Computing Management
+Q 64 The Topology Exposure and Inventory (TE&IV) SMOS provides information about:,A) Only radio resources,B) Only cloud resources,C) O-RAN resources and their relationships (network view),D) Only transport resources
+Q 65 Which SMOS handles RAN subnetwork slice provisioning?,A) NFO,B) SME,C) FOCOM,D) NSSM (RAN Network Slice Subnet Management)
+Q 66 What is the R1 interface used for?,A) Connecting O-DU to O-RU,B) Interface between rApps and the SMO/Non-RT RIC framework,C) Connecting the SMO to O-Cloud,D) Connecting E2 nodes to the Near-RT RIC
+Q 67 Which lifecycle management actions can the NFO SMOS perform?,A) Only initial deployment,B) Healing, updates, scaling, software upgrades, and termination,C) Only termination,D) Only scaling and healing
+Q 68 Which of the following is NOT a fundamental resiliency concept in O-RAN?,A) Redundant architectures,B) Fault detection and recovery,C) Proprietary vendor lock-in,D) Load balancing and failover
+Q 69 Which O-RAN release is noted as having insufficient coverage for end-to-end resiliency?,A) Release 001,B) Release 002,C) Release 003,D) Release 004
+Q 70 How can the O-DU detect O-RU failures?,A) Via core network signaling,B) Using FM data (alarms, CM notifications, PM data) via Open Fronthaul M-Plane,C) Only through physical inspection,D) Via the A1 interface
+Q 71 Which protocol provides transport-level redundancy for the F1-C interface?,A) TCP,B) UDP,C) SCTP,D) HTTP/2
+Q 72 What role does the SMO play in resiliency?,A) It has no role in resiliency,B) It only monitors performance metrics,C) It monitors criteria, triggers reconfiguration actions, and manages resiliency policies,D) It only handles software upgrades
+Q 73 Multi-layered resiliency in O-RAN spans:,A) Only physical components,B) Only virtual components,C) Both physical and virtual components,D) Only the transport layer
+Q 74 Which of the following is a gap identified in O-RAN resiliency specifications?,A) Lack of O-RU specifications,B) O-CU-CP failures and O-Cloud NF Deployment failures handling,C) Excessive specification of transport resiliency,D) Too many resiliency mechanisms defined
+Q 75 Which working groups are involved in the O-RAN resiliency study?,A) Only WG1,B) WG1, WG4, WG6, WG9, and WG11,C) Only WG4 and WG6,D) Only WG9 and WG11
+Q 76 In TN-NTN interworking, what does SNO stand for?,A) Service Network Operator,B) Satellite Network Operator,C) Shared Network Orchestrator,D) System Node Operator
+Q 77 What is the main challenge in TN-NTN coverage information sharing?,A) Lack of satellite bandwidth,B) Current interfaces don't support sharing coverage information between operator domains,C) UEs cannot connect to satellites,D) NTN coverage is always static
+Q 78 Why is automated coverage information exchange needed between TN and NTN?,A) Because coverage never changes,B) Because both TN and NTN footprints are continuously evolving and dynamic,C) Because manual methods are more reliable,D) Because it is required by spectrum regulators
+Q 79 What information does the NTN segment need to communicate to the TN segment?,A) Only satellite orbital parameters,B) Active/potential NTN coverage, applicable cells, configuration, and satellite ephemeris,C) Only billing information,D) Only spectrum allocation data
+Q 80 Most MNOs seeking NTN integration will likely:,A) Deploy and operate their own satellites,B) Build their own ground stations only,C) Form agreements with Satellite Network Operators (SNOs),D) Abandon terrestrial networks entirely
+Q 81 What does PNF stand for in O-RAN?,A) Programmable Network Framework,B) Physical Network Function,C) Private Network Fabric,D) Protocol Normalization Function
+Q 82 Which requirement mandates O-RAN OAM Architecture to support virtualization of RAN components?,A) REQ-M&O-FUN1,B) REQ-M&O-NFUN2,C) REQ-M&O-FUN3,D) REQ-M&O-NFUN4
+Q 83 What does REQ-M&O-NFUN3 require the O-RAN OAM Architecture to support?,A) Network slicing,B) Analytics and AI/ML to improve efficiency and reduce costs,C) Security of interactions between components,D) Virtualized resource orchestration through O2
+Q 84 Which protocol is used for synchronization in O-Cloud platform runtime?,A) NTP (Network Time Protocol),B) SNMP,C) PTP (Precision Time Protocol),D) SyncE
+Q 85 OpenStack is typically used in O-Cloud for which type of deployment?,A) Container deployment,B) Virtual Machine (VM) deployment,C) Physical Network Function deployment,D) Transport network deployment
+Q 86 Which O-RAN requirement mandates support for network slicing?,A) REQ-M&O-FUN7,B) REQ-M&O-FUN11,C) REQ-M&O-NFUN1,D) REQ-M&O-FUN4
+Q 87 How does the Shared O-RU feature support network slicing?,A) By eliminating the need for slicing,B) Through dynamic resource allocation aspects,C) By creating physical network partitions only,D) By limiting each slice to a single O-DU
+Q 88 In IIoT, how can a virtual Non-Public Network (NPN) be implemented?,A) By deploying all equipment privately,B) Using network slicing where some equipment (gNB) is private and others (UPF, 5GC) are shared,C) By using only WiFi networks,D) By completely isolating from any public network
+Q 89 Where is AI/ML model training primarily performed in O-RAN?,A) At the O-RU,B) At the O-DU,C) In the Non-RT RIC or SMO,D) In the UE
+Q 90 Where does AI/ML inference for near-real-time decisions primarily occur?,A) In the SMO,B) In the Non-RT RIC,C) In the Near-RT RIC,D) In the O-Cloud management layer
+Q 91 Which interface do rApps use to interact with the Non-RT RIC framework?,A) A1 interface,B) E2 interface,C) R1 interface,D) O2 interface
+Q 92 In the energy saving AI/ML workflow, how are control decisions sent to E2 nodes?,A) Via the O1 interface only,B) Via the A1 interface,C) Via the E2 interface from the Near-RT RIC,D) Via the Open Fronthaul interface only
+Q 93 What does the AI/ML model in the CPM use case predict?,A) Hardware failures only,B) KPIs and congestion before it occurs,C) Only spectrum availability,D) Only UE battery levels
+Q 94 Which two main WDM technologies are used for 5G fronthaul?,A) CWDM and TWDM,B) MWDM and DWDM,C) FWDM and LWDM,D) SWDM and UWDM
+Q 95 How many bidirectional channels does MWDM define for its maximum configuration?,A) 6 channels,B) 8 channels,C) 12 channels,D) 24 channels
+Q 96 What wavelength range does DWDM C-Band use for 5G fronthaul?,A) 1260-1360 nm,B) 1529.55-1560.61 nm,C) 1600-1650 nm,D) 800-900 nm
+Q 97 What is the adjacent channel spacing for MWDM transmitters?,A) 1 nm or 2 nm,B) 3 nm or 5 nm,C) 7 nm or 13 nm,D) 20 nm or 40 nm
+Q 98 Which receiver technology can extend MWDM transmission distance beyond 10 km up to 20 km?,A) PIN diode only,B) Avalanche Photo Diode (APD),C) Directly Modulated Laser (DML),D) Erbium-Doped Fiber Amplifier (EDFA)
+Q 99 According to ITU-T, what does coordination of computing and networking encompass?,A) Only computing resource management,B) Coordination of utilization, control, and management of computing, storage, and networking resources,C) Only network resource management,D) Only storage resource management
+Q 100 Which organization provides the reference framework for network virtualization that O-RAN builds upon?,A) IEEE,B) IETF,C) ETSI ISG NFV,D) ITU-R

@@ -1,0 +1,52 @@
+Q 11 What functions does the Open Fronthaul interface comprise?,A) Control, User, Synchronization, and Management planes,B) Only Control and User planes,C) Only Management and Synchronization planes,D) Control, Data, Signaling, and Security planes
+Q 13 What does FCAPS stand for in the context of the O1 interface?,A) Fault Configuration Accounting Performance Security,B) Fronthaul, Cloud, Access, Performance, Synchronization,C) Function, Compute, Analytics, Policy, Slicing,D) Fault, Computing, Architecture, Protocol, Service
+Q 17 In the Flat management model, how do Managed Functions connect to the SMO?,A) Through the O-DU as a proxy,B) Via the A1 interface only,C) Each MF is an ME and exposes an O1 interface directly to the SMO,D) Through the E2 interface
+Q 18 In the Hierarchical management model, who manages the O-RU?,A) The SMO directly via O1,B) The O-DU via the Open Fronthaul M-Plane interface,C) The Near-RT RIC via E2,D) The Non-RT RIC via A1
+Q 20 In the Hybrid management model, the O-RU is managed by:,A) Only the SMO,B) Only the O-DU,C) Both the O-DU (via M-Plane) and the SMO (via direct interface),D) The Near-RT RIC and O-DU
+Q 26 At Level 1 of CCIN integration, what is the relationship between computing and communication?,A) They are jointly scheduled in real-time,B) They interact via established APIs,C) They simply co-locate on the same hardware with little interaction,D) They are managed by different orchestrators
+Q 27 In CCIN, which entity registers computing services with the SME?,A) Near-RT RIC,B) O-Cloud,C) REAO (RAN Edge Application Orchestrator),D) O-DU
+Q 31 What type of services can CCIN provide externally?,A) Only raw computing capability (FLOPS),B) Only traditional RAN communication services,C) Various types, from basic computing capability (FLOPS) to AI model training capabilities,D) Only edge caching services
+Q 32 In the integrated communication and computing service provisioning via SMO, which interfaces are used to retrieve information?,A) Only O1,B) Only O2,C) O1 and O2 interfaces,D) A1 and E2 interfaces
+Q 34 In deployment option 1 for energy saving, where is the AI/ML inference model hosted?,A) At the O-RU,B) At the Near-RT RIC,C) At the Non-RT RIC,D) At the O-DU
+Q 35 For a 4T4R O-RU, what is the approximate energy saving per O-RU in the energy saving state?,A) 50-80 W,B) 150-180 W,C) 300-400 W,D) 500-600 W
+Q 36 For a 64T64R O-RU, what is the approximate energy saving per O-RU in the energy saving state?,A) 100-150 W,B) 150-180 W,C) 260-340 W,D) 500-700 W
+Q 39 In RF Channel Reconfiguration, how many Tx/Rx Arrays might be switched off in a 64T64R mMIMO O-RU?,A) 8 out of 64,B) 16 out of 64,C) 32 out of 64,D) 48 out of 64
+Q 40 Does Non-RT or Near-RT RIC controlled Cell Switch Off/On impact 3GPP specifications?,A) Yes, it requires new 3GPP RAN specifications,B) Yes, it requires new 3GPP System Architecture specifications,C) No, it is not considered to have any impact,D) Yes, it impacts both RAN and System Architecture specifications
+Q 42 What is the estimated yearly energy saving for 10,000 64T64R O-RUs with 3 hours switch-off per day?,A) 730-1,000 MWh,B) 1,643-1,971 MWh,C) 2,847-3,723 MWh,D) 5,000-6,000 MWh
+Q 43 In enrichment information-based traffic steering, which interface delivers enrichment information from Non-RT RIC to Near-RT RIC?,A) O1,B) E2,C) A1-EI,D) Y1
+Q 44 What triggers the Near-RT RIC to request enrichment information in the traffic steering use case?,A) A timer expiration,B) Detection of a cell performance breach (e.g., congestion),C) A request from the O-DU,D) An operator manual command
+Q 47 In the IIoT optimization use case, which feature allows up to 4 RLC entities/legs?,A) Ethernet Header Compression (EHC),B) Carrier Aggregation,C) PDCP duplication,D) Pre-emption Indication (PI)
+Q 50 In the MIMO Mode Selection (MMS) use case, what does the rApp optimize?,A) Fronthaul bandwidth allocation,B) SU-MIMO vs. MU-MIMO assignment,C) Core network routing,D) O-Cloud resource allocation
+Q 56 In multi-operator Shared O-RU, what prevents a tenant from accessing another tenant's data?,A) Physical separation of hardware,B) PLMN-ID based role-based access control,C) Different O-Cloud instances,D) Separate SMO frameworks
+Q 58 In the basic resiliency use case for Shared O-RU, what triggers the switch-over?,A) A timer expiration,B) Operator manual intervention only,C) Active O-DU failure (operational state = disabled),D) O-RU software upgrade
+Q 60 What does the SME (Service Management and Exposure) SMOS provide?,A) Only rApp lifecycle management,B) SMOS registration, discovery, authentication/authorization, and communication support,C) Only fault management services,D) Only O-Cloud resource management
+Q 67 Which lifecycle management actions can the NFO SMOS perform?,A) Only initial deployment,B) Healing, updates, scaling, software upgrades, and termination,C) Only termination,D) Only scaling and healing
+Q 70 How can the O-DU detect O-RU failures?,A) Via core network signaling,B) Using FM data (alarms, CM notifications, PM data) via Open Fronthaul M-Plane,C) Only through physical inspection,D) Via the A1 interface
+Q 72 What role does the SMO play in resiliency?,A) It has no role in resiliency,B) It only monitors performance metrics,C) It monitors criteria, triggers reconfiguration actions, and manages resiliency policies,D) It only handles software upgrades
+Q 75 Which working groups are involved in the O-RAN resiliency study?,A) Only WG1,B) WG1, WG4, WG6, WG9, and WG11,C) Only WG4 and WG6,D) Only WG9 and WG11
+Q 76 In TN-NTN interworking, what does SNO stand for?,A) Service Network Operator,B) Satellite Network Operator,C) Shared Network Orchestrator,D) System Node Operator
+Q 79 What information does the NTN segment need to communicate to the TN segment?,A) Only satellite orbital parameters,B) Active/potential NTN coverage, applicable cells, configuration, and satellite ephemeris,C) Only billing information,D) Only spectrum allocation data
+Q 88 In IIoT, how can a virtual Non-Public Network (NPN) be implemented?,A) By deploying all equipment privately,B) Using network slicing where some equipment (gNB) is private and others (UPF, 5GC) are shared,C) By using only WiFi networks,D) By completely isolating from any public network
+Q 92 In the energy saving AI/ML workflow, how are control decisions sent to E2 nodes?,A) Via the O1 interface only,B) Via the A1 interface,C) Via the E2 interface from the Near-RT RIC,D) Via the Open Fronthaul interface only
+Q 99 According to ITU-T, what does coordination of computing and networking encompass?,A) Only computing resource management,B) Coordination of utilization, control, and management of computing, storage, and networking resources,C) Only network resource management,D) Only storage resource management
+
+
+
+Q 27 In CCIN which entity registers computing services with the SME?,A) Near-RT RIC,B) O-Cloud,C) REAO (RAN Edge Application Orchestrator),D) O-DU
+Q 31 What type of services can CCIN provide externally?,A) Only raw computing capability (FLOPS),B) Only traditional RAN communication services,C) Various types from basic computing capability (FLOPS) to AI model training capabilities,D) Only edge caching services
+Q 32 In the integrated communication and computing service provisioning via SMO which interfaces are used to retrieve information?,A) Only O1,B) Only O2,C) O1 and O2 interfaces,D) A1 and E2 interfaces
+Q 34 In deployment option 1 for energy saving where is the AI/ML inference model hosted?,A) At the O-RU,B) At the Near-RT RIC,C) At the Non-RT RIC,D) At the O-DU
+Q 35 For a 4T4R O-RU what is the approximate energy saving per O-RU in the energy saving state?,A) 50-80 W,B) 150-180 W,C) 300-400 W,D) 500-600 W
+Q 36 For a 64T64R O-RU what is the approximate energy saving per O-RU in the energy saving state?,A) 100-150 W,B) 150-180 W,C) 260-340 W,D) 500-700 W
+Q 39 In RF Channel Reconfiguration how many Tx/Rx Arrays might be switched off in a 64T64R mMIMO O-RU?,A) 8 out of 64,B) 16 out of 64,C) 32 out of 64,D) 48 out of 64
+Q 40 Does Non-RT or Near-RT RIC controlled Cell Switch Off/On impact 3GPP specifications?,A) Yes it requires new 3GPP RAN specifications,B) Yes it requires new 3GPP System Architecture specifications,C) No it is not considered to have any impact,D) Yes it impacts both RAN and System Architecture specifications
+Q 42 What is the estimated yearly energy saving for 10000 64T64R O-RUs with 3 hours switch-off per day?,A) 730-1000 MWh,B) 1643-1971 MWh,C) 2847-3723 MWh,D) 5000-6000 MWh
+Q 43 In enrichment information-based traffic steering which interface delivers enrichment information from Non-RT RIC to Near-RT RIC?,A) O1,B) E2,C) A1-EI,D) Y1
+Q 44 What triggers the Near-RT RIC to request enrichment information in the traffic steering use case?,A) A timer expiration,B) Detection of a cell performance breach such as congestion,C) A request from the O-DU,D) An operator manual command
+Q 47 In the IIoT optimization use case which feature allows up to 4 RLC entities or legs?,A) Ethernet Header Compression (EHC),B) Carrier Aggregation,C) PDCP duplication,D) Pre-emption Indication (PI)
+Q 50 In the MIMO Mode Selection (MMS) use case what does the rApp optimize?,A) Fronthaul bandwidth allocation,B) SU-MIMO vs. MU-MIMO assignment,C) Core network routing,D) O-Cloud resource allocation
+Q 56 In multi-operator Shared O-RU what prevents a tenant from accessing another tenant's data?,A) Physical separation of hardware,B) PLMN-ID based role-based access control,C) Different O-Cloud instances,D) Separate SMO frameworks
+Q 58 In the basic resiliency use case for Shared O-RU what triggers the switch-over?,A) A timer expiration,B) Operator manual intervention only,C) Active O-DU failure where operational state equals disabled,D) O-RU software upgrade
+Q 76 In TN-NTN interworking what does SNO stand for?,A) Service Network Operator,B) Satellite Network Operator,C) Shared Network Orchestrator,D) System Node Operator
+Q 88 In IIoT how can a virtual Non-Public Network (NPN) be implemented?,A) By deploying all equipment privately,B) Using network slicing where some equipment (gNB) is private and others (UPF or 5GC) are shared,C) By using only WiFi networks,D) By completely isolating from any public network
+Q 92 In the energy saving AI/ML workflow how are control decisions sent to E2 nodes?,A) Via the O1 interface only,B) Via the A1 interface,C) Via the E2 interface from the Near-RT RIC,D) Via the Open Fronthaul interface only
