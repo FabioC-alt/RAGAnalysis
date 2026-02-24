@@ -1,0 +1,11 @@
+Title,Latency (FAISS) (ms),Accuracy (FAISS) (%),Latency (Manual) ms,Accuracy (Manual) (%), Latency (Cosine), Accuracy(Cosine)
+tinyllama(1b),1.22,0,21.55,0
+phi (3b),1.16,11,22.20,14
+Mistral (7b),0.94,9,18.49,10
+llama2 (13b),1.19,9,19.62,7,74.23,15
+ORANSight (gemma2-2.6B),1.21,14,14.86,14
+ORANSight (llama-8b),1.01,17,16.95,17
+tinyllama(No knowledge),0.92,0,13.43,0
+phi2(3b) (No knowledge),0.99,11,13.57,11
+Mistral (7b) (No knowledge),0.93,7,13.64,7
+llama2 (13b) (No knowledge),1.13,15,16.83,15
