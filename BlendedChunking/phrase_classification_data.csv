@@ -1,0 +1,6 @@
+Text,Token_Count,Special_Char_Ratio,Verb_Density,Avg_Word_Length,Is_Identifier_Style,Label
+#RAG,1,0.25,0.0,4.0,1,Syntactic
+Retrieval Augmented Generation (RAG) is a technique that enables Language Models to retrieve and incorporate new information from external data sources.,21,0.0,0.19,6.3,0,Semantic
+LLM_Architecture,1,0.062,0.0,16.0,1,Syntactic
+Large Language Models are AI systems trained on vast amounts of text data to understand and generate human-like language.,19,0.0,0.105,5.4,0,Semantic
+Vector-Database:,1,0.062,0.0,16.0,1,Syntactic
