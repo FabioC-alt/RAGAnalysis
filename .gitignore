@@ -1,2 +1,5 @@
 oran-specifications-md/
-
+.venv_legacy/
+.venv_modern/
+BlendedChunking/test2/data/
+BlendedChunking/test2/dataOran
